@@ -1,0 +1,23 @@
+.texte1 {
+font-family: "Arial Black, Gadget, sans-serif";
+ font-size: 15px; 
+ color: #FF0000;
+ font-weight: bolder; 
+ font-style: italic;
+ line-height:90px;
+ background-color:#FCF; /
+}
+
+.fond-bleu{
+ background-color: #ebf6f9; 
+ }
+
+ .boite-alerte {
+background-color: #FFC;
+background-image: url(../images/exclamation-orange.png);
+background-repeat: no-repeat;
+background-position: right center; 
+padding-left: 290px; /* Remplissage à gauche de 40px, Si l'on ne met pas un padding supérieur à la largeur de l'image, dans le cas où l'on saisit du texte dans la boîte, il serait placer sur l'image */ 
+padding-top:150px; /* Remplissage en haut */
+padding-bottom:150px; /* Remplissage en bas */
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+<meta charset="utf-8">
+<title>INFOCOM Matériel informatique</title>
+<style>
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.main {
+    text-align: left;
+    background: aquamarine;
+}
+
+.header {background: aquamarine;}
+.footer {background: aquamarine;}
+.aside1 {background: aquamarine;}
+
+@media all and (min-width: 768px) {
+    .aside { flex: 1 auto; }
+    .main    { flex: 3 0px; }
+    .aside1 { order: 1; }
+    .main    { order: 2; }
+    .footer  { order: 4; }
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <header class="header">INFOCOM Matériel informatique <hr/><br/></header>
+  <aside class="aside aside1">
+    <p><strong>DISQUES DURS</strong></p>
+    <p><strong>CLAVIERS ET SOURIS</strong></p>
+    <p><strong>DIVERS</strong></p>
+
+  </aside>
+  <article class="main">
+    <div><h1>Les disques durs</h1>
+      <table>
+
+      <tr>
+        <td>produit</td>
+        <td>Prix</td>
+        <td>Description</td>
+      </tr>
+      <tr>
+        <td>Disque dur Segate 500go</td>
+        <td>100eur </td>
+        <td>taille 135x87x30; Temps d'acces moyen 12ms</td>
+      </tr>
+      <tr>
+        <td>Disque dur Western 750go</td>
+        <td>120eur </td>
+        <td>taille 155x88x32; Temps d'acces moyen 15ms</td>
+      </tr>
+      <tr>
+        <td>Disque dur Extern 500go</td>
+        <td>115eur </td>
+        <td>USB2, 2.5pouces, taille 120x78x32; Temps d'acces moyen 20ms</td>
+      </tr>
+      </table>
+    </div>
+
+    <div><h1>Les claviers et souris</h1>
+      <table>
+      <tr>
+        <td>Produit</td>
+        <td>Prix</td>
+        <td>Description</td>
+      </tr>
+      <tr>
+        <td>clavier Logitech</td>
+        <td>10eur </td>
+        <td>filiaire USB2, controle multimedia</td>
+      </tr>
+      <tr>
+        <td>Souris Logitech</td>
+        <td>12eur</td>
+        <td>Optique, filiare USB2</td>
+      </tr>
+      <tr>
+        <td>Clavier souris sans fil</td>
+        <td>35eur</td>
+        <td>Recepteur USB2</td>
+      </tr>
+      </table>
+    </div>
+
+    <div><h1>Divers</h1>
+      <table>
+      <tr>
+        <td>produit</td>
+        <td>Prix</td>
+        <td>Description</td>
+      </tr>
+      <tr>
+        <td>Enceinte 5W</td>
+        <td>30eur </td>
+        <td>filiaire USB2</td>
+      </tr>
+      <tr>
+        <td>Tapis souris</td>
+        <td>5eur</td>
+        <td></td>
+      </tr>
+
+      </table>
+    </div>
+  </article>
+  <footer class="footer">INFOCOM le leader de la vente de matériel informatique</footer>
+</div>
+
+
+
+<p id="demo">Click the button to change the layout of this paragraph</p>
+
+<script>
+<form>
+<input 
+
+
+function myFunction() {
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px";
+    x.style.color = "red";
+}
+</script>
+
+<button onclick="myFunction()">Click Me!</button>
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
